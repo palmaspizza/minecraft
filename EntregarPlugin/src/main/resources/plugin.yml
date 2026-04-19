@@ -1,0 +1,16 @@
+name: EntregarPlugin
+version: 1.0
+main: cl.server.entregar.EntregarPlugin
+api-version: 1.20
+description: Permite entregar items a otros jugadores verificando el inventario
+author: Server
+commands:
+  entregar:
+    description: Entrega items a otro jugador
+    usage: /entregar <item> <jugador> <cantidad>
+    permission: entregar.usar
+    permission-message: §cNo tienes permiso para usar este comando.
+permissions:
+  entregar.usar:
+    description: Permite usar /entregar
+    default: true
